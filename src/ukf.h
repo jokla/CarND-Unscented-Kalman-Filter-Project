@@ -31,6 +31,9 @@ public:
   ///* predicted sigma points matrix
   MatrixXd Xsig_pred_;
 
+  ///* create vector for weights
+  VectorXd weights_;
+
   ///* time when the state is true, in us
   long long time_us_;
 
@@ -54,9 +57,6 @@ public:
 
   ///* Radar measurement noise standard deviation radius change in m/s
   double std_radrd_ ;
-
-  ///* Weights of sigma points
-  VectorXd weights_;
 
   ///* State dimension
   int n_x_;
