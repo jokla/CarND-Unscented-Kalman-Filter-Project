@@ -67,6 +67,12 @@ public:
   ///* Sigma point spreading parameter
   double lambda_;
 
+  ///* R Matrix for lidar measurement update
+  Eigen::MatrixXd R_lidar_;
+
+  ///* H Matrix for lidar measurement update
+  Eigen::MatrixXd H_lidar_;
+
 
   /**
    * Constructor
